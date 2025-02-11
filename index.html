@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="icon" href="./assets/logo.png">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Spotify : Web Player - Music for everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <li>
+                    <ul style="opacity:1"><a href="#">
+                        <icon><i class="fa-solid fa-house"></i></icon>
+                        Home
+                    </a></ul>
+                    <ul><a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        search
+                    </a></ul>
+                </li>
+            </div>
+
+
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options" >
+                        
+                        <img style="opacity:1" src="./assets/library_icon.png">
+                        
+                        <a  href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                    
+                <div class="lib-box">
+
+                    <div class="ist-box">
+                        <p><h5><b>Create your first playlist</b></h5></p>
+                        <p><h6>It,s easy, we'll help you</h6></p>
+                        <span class="badge rounded-pill text-bg-light">
+                            Create playlist
+                        </span>
+                    </div>
+
+                    <div class="iind-box">
+                        <p><h5><b>Let's find some podcast to follow</b></h5></p>
+                        <p><h6>We'll keep you updated on new episodes</h6></p>
+                        <span class="badge rounded-pill text-bg-light">
+                            Browse podcasts
+                        </span>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+
+
+        </div>
+
+        <div class="main-content">
+            <div class="main-nav">
+                <div class="arrows">
+                    <img src="./assets/backward_icon.png">
+                    <img src="./assets/forward_icon.png">
+                </div>
+                <div class="buttons">
+                    <button class="btn btn-light">Explore Premium</button>
+                    <button class="btn btn-dark"><i class="fa-solid fa-download"></i>Install App</button>
+                    <i id="user-button" class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <div class="cards">
+               <div class="played">
+                    <div class="played-header">
+                        <h3><b>Recently Played</b></h3>
+                        <p></p>
+                    </div>
+                    
+                    <div class="played-content">
+                        <div class="played-one">
+                            <img src="./assets/card1img.jpeg">
+                            <p><h6><b>Top 50-Global</b></h6></p>
+                            <p class="other">your daily update of most played track right...</p>
+
+                        </div>
+                    </div>
+                    
+               </div>
+
+               <div class="trending">
+                    <div class="trending-header">
+                        <h3><b>Trending now near you</b></h3>
+                    </div>
+
+                    <div class="trending-content">
+                        <div class="trending-one">
+                            <img src="./assets/card2img.jpeg">
+                            <p><h6><b>Mahiya Jinna sona</b></h6></p>
+                            <p class="other">spotify</p>
+                        </div>
+                    
+
+                    
+                        <div class="trending-two">
+                            <img src="./assets/card3img.jpeg">
+                            <p><h6><b>Mere pas tum ho</b></h6></p>
+                            <p class="other">spotify</p>
+                        </div>
+                    
+
+                    
+                        <div class="trending-three">
+                            <img src="./assets/card4img.jpeg">
+                            <p><h6><b>NAA Ready</b></h6></p>
+                            <p class="other">spotify</p>
+                        </div>
+
+                        <div class="trending-content">
+                        <div class="trending-one">
+                            <img src="./assets/card2img.jpeg">
+                            <p><h6><b>Mahiya Jinna sona</b></h6></p>
+                            <p class="other">spotify</p>
+                        </div>
+                    
+
+                    
+                        <div class="trending-two">
+                            <img src="./assets/card3img.jpeg">
+                            <p><h6><b>Mere pas tum ho</b></h6></p>
+                            <p class="other">spotify</p>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="featured">
+                    <div class="featured-header">
+                        <h3><b>Recently Played</b></h3>
+                        <p></p>
+                    </div>
+                    
+                    <div class="featured-content">
+                        <div class="featured-one">
+                            <img src="./assets/card5img.jpeg">
+                            <p><h6><b>Top 50-Global</b></h6></p>
+                            <p class="other">your daily update of most played track right...</p>
+
+                        </div>
+
+                        <div class="featured-two">
+                            <img src="./assets/card6img.jpeg">
+                            <p><h6><b>Top 50-Global</b></h6></p>
+                            <p class="other">your daily update of most played track right...</p>
+
+                        </div>
+                    </div>
+                    
+               </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="line">
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        
+    </div>
+
+    <div class="music_player">
+
+        <div class="left">
+            <img src="./assets/card2img.jpeg">
+            <div class="artist">
+                <h6>Mahiya jinna sona</h6>
+                <p>Drashan Rawal</p>
+            </div>
+            <div class="i">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-expand"></i>
+            </div>
+            
+        </div>
+
+        <div class="center">
+           <div class="controls">
+                <img src="./assets/player_icon1.png">
+                <img src="./assets/player_icon2.png">
+                <img src="./assets/player_icon3.png">
+                <img src="./assets/player_icon4.png">
+                <img src="./assets/player_icon5.png">
+           </div>
+           <div class="progress_bar">
+            <span class="crr-time">0:00</span>
+            <input class="bar" type="range" min="0" max="100" step="2">
+            <span class="tot-time">3:56</span>
+           </div>
+        </div>
+        <div class="right">
+            <i class="fa-solid fa-file-audio"></i>
+            <i class="fa-solid fa-microphone-lines"></i>
+            <i class="fa-solid fa-compact-disc"></i>
+            <i class="fa-solid fa-headphones-simple"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <input class="sound" type="range">
+        </div>
+
+    </div>
+</body>
+</html>

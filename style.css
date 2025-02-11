@@ -1,0 +1,417 @@
+*{
+    font-family: "Montserrat", serif;
+    margin:0;
+    padding:0;
+    
+}
+body{
+    background-color: black;
+    color:#fff;
+    overflow:hidden;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    background-color:black;
+    width:340px;
+      /* 16px */
+}
+
+
+
+
+/* NAVIGATION */
+
+.main .sidebar .nav a{
+    text-decoration: none;
+    color:white;
+    font-size: 1rem;
+}
+.main .sidebar .nav li{
+    list-style:none;
+    size:20px;
+}
+
+.main .sidebar .nav{
+    position:relative;
+    width:95%;
+    height: 130px;;
+    margin: 8PX;
+
+    background-color:#121212;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+.nav li{
+    margin-top:10px;
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.nav i{
+    font-size: 1.5rem;
+}
+.nav ul{
+    opacity:0.4;
+
+}
+.nav ul:hover{
+    opacity:1;
+    
+}
+
+/* LIBRARY */
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: .75rem;
+    margin: 9PX;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.library a{
+    text-decoration: none;
+    color:white;
+}
+.lib-options img{
+    height: 1.25rem;
+    width:1.25rem;
+    margin-right: .5rem;
+    
+}
+.lib-options{
+    opacity: .5;
+}
+.icons{
+    size:1.5rem;
+    
+}
+.icons i{
+    margin-right: .8rem;
+    opacity:.5;
+}
+.icons i:hover{
+    opacity:1;
+}
+.lib-options:hover{
+    opacity: 1;
+}
+
+/* 1ST BOX */
+.ist-box{
+    background-color: #414040;
+    margin :1rem 4px;
+    padding: 1rem;
+    line-height: 2.5rem;
+    border-radius: .5rem;
+    font-weight: 150px;
+}
+
+.ist-box .badge{
+    margin-top: 10px;
+    font-size:1.1rem;
+    opacity: .5;
+}
+.ist-box .badge:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* 2ND BOX */
+.iind-box{
+    background-color: #414040;
+    margin :1rem 4px;
+    padding: 1rem;
+    line-height: 2.5rem;
+    border-radius: .5rem;
+    font-weight: 100px;
+}
+.iind-box .badge{
+    margin-top: 10px;
+    font-size:1.1rem;
+    opacity: .5;   
+}
+.iind-box .badge:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+/* Main Content */
+.main-content{
+    background-color: #121212;
+    flex:1;
+    height:91vh;
+    border-radius: 1rem;
+    
+    overflow:auto;
+    margin:0.5rem;
+
+}
+
+.main-nav{
+    padding: 1rem;
+    padding-right: 2rem;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #252525;
+    
+}
+.arrows img{
+
+    margin-right: 0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    background-color: #414040;
+    border-radius: 5rem;
+    opacity: 0.7;
+}
+.arrows img:hover{
+    opacity:1;
+}
+.buttons button{
+    border-radius: 2rem;
+    margin-right: .8rem;
+}
+#user-button{
+    cursor: pointer;
+}
+
+
+/* Cards */
+.main-content .cards{
+    margin: 2rem 1rem;
+    
+}
+
+.played .played-header{
+    display: flex;
+    justify-content: space-between;
+}
+.played-one{
+    /* height: 25rem; */
+    width: 16rem;
+    background-color: #2f2e2e;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.played-one h6{
+    cursor: pointer;
+}
+.played-content img{
+    height:14rem;
+    width: 14rem;
+    transition: all .1s ease-in-out;
+    border-radius: 1rem;
+}
+.played-content img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.cards .other{
+    color:#d5d0d067
+}
+
+
+
+.trending{
+    margin-top: 2rem;
+    
+}
+.trending-content{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.trending .trending-header{
+    display: flex;
+    justify-content: space-between;
+}
+.trending-one ,.trending-two, .trending-three{
+    /* height: 25rem; */
+    margin: 1rem;
+    width: 16rem;
+    background-color: #2f2e2e;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.trending-one h6,.trending-two h6, .trending-three h6{
+    cursor: pointer;
+}
+.trending-content img{
+    height:14rem;
+    width: 14rem;
+    transition: all .1s ease-in-out;
+    border-radius: 1rem;
+}
+.trending-content img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+
+
+.featured{
+    margin-top: 2rem;
+    
+}
+.featured-content{
+    display: flex;
+ 
+}
+.featured .featured-header{
+    display: flex;
+    justify-content: space-between;
+}
+.featured-one ,.featured-two{
+    /* height: 25rem; */
+    margin: 1rem;
+    width: 16rem;
+    background-color: #2f2e2e;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.featured-one h6,.featured-two h6{
+    cursor: pointer;
+}
+.featured-content img{
+    height:14rem;
+    width: 14rem;
+    transition: all .1s ease-in-out;
+    border-radius: 1rem;
+}
+.featured-content img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.footer{
+    height:200px;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+
+}
+.line{
+    width:90%;
+    height:30%;
+    border-top:1px solid white;
+    opacity: 0.4;
+}
+
+
+
+.music_player{
+    background-color: rgb(37, 37, 37);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 9vh;
+    margin-top: 1rem;
+    display: flex;
+    border-radius: .5rem;
+}
+.music_player .left{
+    width: 25%;
+    /* background-color: #414040; */
+}
+.music_player .center{
+    width:50%;
+    /* background-color: #acacac; */
+}
+.music_player .right{
+    width: 25%;
+    /* background-color: #fff; */
+}
+.controls img{
+    height: 2.8rem;
+    padding:.7rem;   
+}
+.controls img:hover{
+    cursor: pointer;
+    transform: scale(1.1);   
+}
+.controls{
+    display: flex;
+    justify-content: center;
+}
+.progress_bar{
+    display: flex;
+    justify-content: center;
+    
+}
+.progress_bar .crr-time,.progress_bar .tot-time{
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.bar{
+    cursor: pointer;
+    width:30rem;
+    background-color: green;
+}
+
+
+.music_player .left{
+    padding: .5rem;
+    display: flex;
+}
+
+
+.music_player .left img{
+    height: 3.5;
+    width: 4rem;
+    transition: all 0.3s;
+}
+
+.music_player .left img , .artist p,.artist h6 , .left i{
+    padding-right: 1rem;
+    transition: all 0.4s;
+    
+}
+.music_player .left img:hover  , .left i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.artist p:hover,.artist h6:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+.right .sound{
+    width:7rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right i{
+    padding-right: 0.8rem;
+    cursor: pointer;
+}
+.right i:hover, .right input:hover{
+    transform: scale(1.2);
+}
+
+
+
+/* 
+DONE!!! Really Appreciative */
